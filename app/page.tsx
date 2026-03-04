@@ -18,9 +18,9 @@ export default function Home() {
             <a href="#work" className="hover:text-white transition">Our Work</a>
             <a href="#contact" className="hover:text-white transition">Contact</a>
           </div>
-          <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition">
-            Book a Call
-          </button>
+          <a href="#contact" className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition inline-block">
+  Book a Call
+</a>
         </div>
       </nav>
 
@@ -46,13 +46,13 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold transition shadow-[0_0_30px_rgba(59,130,246,0.3)]">
-                Start Your Project <ArrowRight size={18} />
-              </button>
-              <button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full font-semibold transition border border-gray-700">
-                View Case Studies
-              </button>
-            </div>
+  <a href="#contact" className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold transition shadow-[0_0_30px_rgba(59,130,246,0.3)]">
+    Start Your Project <ArrowRight size={18} />
+  </a>
+  <a href="#services" className="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full font-semibold transition border border-gray-700">
+    View Services
+  </a>
+</div>
           </motion.div>
         </div>
         
