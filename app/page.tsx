@@ -98,6 +98,69 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Our Work / Case Studies Section */}
+      <section id="work" className="py-24 bg-[#0d1117] px-6 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured Case Studies</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">We don't just write code. We engineer systems that solve complex business bottlenecks.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            
+            {/* Case Study 1: E-Commerce */}
+            <div className="bg-[#161b22] rounded-2xl border border-gray-800 overflow-hidden hover:border-blue-500/50 transition duration-300 group shadow-lg">
+              {/* Image Placeholder / Abstract Header */}
+              <div className="h-56 bg-gradient-to-br from-blue-900/40 to-[#0d1117] flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
+                 <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-400 to-transparent"></div>
+                 <h3 className="text-2xl font-bold text-white/50 z-10 group-hover:scale-110 transition duration-500 tracking-wider">E-COMMERCE</h3>
+              </div>
+              
+              <div className="p-8">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs font-semibold bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">React.js</span>
+                  <span className="text-xs font-semibold bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">PostgreSQL</span>
+                  <span className="text-xs font-semibold bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20">Payment Gateway</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-3">High-Conversion Retail Storefront</h3>
+                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                  <strong className="text-gray-300">The Challenge:</strong> A retail client needed a scalable online store capable of handling flash-sale traffic without crashing.<br/><br/>
+                  <strong className="text-gray-300">The Solution:</strong> Engineered a custom full-stack e-commerce solution with sub-second page loads, automated inventory databases, and secure payment integration. Resulted in a 40% increase in checkout conversions.
+                </p>
+                <a href="#contact" className="text-blue-400 hover:text-blue-300 font-medium text-sm flex items-center gap-1 transition">
+                  Discuss a similar project <ArrowRight size={16} />
+                </a>
+              </div>
+            </div>
+
+            {/* Case Study 2: Backend Architecture */}
+            <div className="bg-[#161b22] rounded-2xl border border-gray-800 overflow-hidden hover:border-cyan-500/50 transition duration-300 group shadow-lg">
+              {/* Image Placeholder / Abstract Header */}
+              <div className="h-56 bg-gradient-to-br from-cyan-900/40 to-[#0d1117] flex items-center justify-center border-b border-gray-800 relative overflow-hidden">
+                 <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-400 to-transparent"></div>
+                 <h3 className="text-2xl font-bold text-white/50 z-10 group-hover:scale-110 transition duration-500 tracking-wider">BACKEND SYSTEMS</h3>
+              </div>
+              
+              <div className="p-8">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs font-semibold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500/20">FastAPI (Python)</span>
+                  <span className="text-xs font-semibold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500/20">Redis</span>
+                  <span className="text-xs font-semibold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500/20">Docker</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-3">Distributed API Architecture</h3>
+                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                  <strong className="text-gray-300">The Challenge:</strong> Traditional relational databases bottleneck and crash when hit with millions of concurrent read-requests.<br/><br/>
+                  <strong className="text-gray-300">The Solution:</strong> Architected a Cache-Aside microservice using Redis and Docker. Reduced database latency from O(log N) disk lookups to O(1) in-memory lookups, ensuring zero downtime under heavy load.
+                </p>
+                <a href="#contact" className="text-cyan-400 hover:text-cyan-300 font-medium text-sm flex items-center gap-1 transition">
+                  Discuss a similar project <ArrowRight size={16} />
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       {/* Contact & Lead Gen Section */}
       <section id="contact" className="py-24 bg-[#0d1117] px-6 border-t border-gray-800">
         <div className="max-w-4xl mx-auto">
